@@ -1,0 +1,6 @@
+C:/Users/27767/Desktop/cboard/applications/uart_task.cpp:10:9:RcState get_rc_state(uint32_t)	16	static
+C:/Users/27767/Desktop/cboard/applications/uart_task.cpp:23:17:void uart_task(const void*)	16	static
+C:/Users/27767/Desktop/cboard/applications/uart_task.cpp:34:17:void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef*, uint16_t)	24	static
+C:/Users/27767/Desktop/cboard/applications/uart_task.cpp:44:17:void HAL_UART_ErrorCallback(UART_HandleTypeDef*)	16	static
+C:/Users/27767/Desktop/cboard/applications/uart_task.cpp:49:1:void __static_initialization_and_destruction_0()	8	static
+C:/Users/27767/Desktop/cboard/applications/uart_task.cpp:49:1:cpp)	8	static

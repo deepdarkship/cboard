@@ -1,0 +1,3 @@
+C:/Users/27767/Desktop/cboard/Core/Src/freertos.c:80:6:vApplicationGetIdleTaskMemory	24	static
+C:/Users/27767/Desktop/cboard/Core/Src/freertos.c:94:6:MX_FREERTOS_Init	184	static
+C:/Users/27767/Desktop/cboard/Core/Src/freertos.c:150:6:StartDefaultTask	16	static

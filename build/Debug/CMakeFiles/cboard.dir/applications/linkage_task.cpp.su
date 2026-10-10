@@ -1,0 +1,15 @@
+C:\ST\STM32CubeCLT_1.22.0\GNU-tools-for-STM32\bin\../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/include/c++/14.3.1/cmath:238:3:constexpr float std::fabs(float)	16	static
+C:/Users/27767/Desktop/cboard/applications/linkage_task.cpp:108:9:float {anonymous}::wrap_pi(float)	16	static
+C:/Users/27767/Desktop/cboard/applications/linkage_task.cpp:117:9:float {anonymous}::get_b_link_ratio(sp::DBusSwitchMode)	24	static
+C:/Users/27767/Desktop/cboard/applications/linkage_task.cpp:135:8:void {anonymous}::update_yaw(const ImuState&)	16	static
+C:/Users/27767/Desktop/cboard/applications/linkage_task.cpp:152:8:void {anonymous}::rebase_reference(float, float, float)	24	static
+C:/Users/27767/Desktop/cboard/applications/linkage_task.cpp:163:8:void {anonymous}::clear_controllers()	8	static
+C:/Users/27767/Desktop/cboard/applications/linkage_task.cpp:169:8:void {anonymous}::safe_stop()	8	static
+C:/Users/27767/Desktop/cboard/applications/linkage_task.cpp:183:8:void {anonymous}::send_motor_commands()	16	static
+C:/Users/27767/Desktop/cboard/applications/linkage_task.cpp:205:8:void {anonymous}::control_motor_a(float, float, uint32_t)	24	static
+C:/Users/27767/Desktop/cboard/applications/linkage_task.cpp:220:8:void {anonymous}::control_motor_b(float, float, uint32_t)	24	static
+C:/Users/27767/Desktop/cboard/applications/linkage_task.cpp:276:17:void CAN1_RX0_IRQHandler()	8	static
+C:/Users/27767/Desktop/cboard/applications/linkage_task.cpp:279:17:void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef*)	24	static
+C:/Users/27767/Desktop/cboard/applications/linkage_task.cpp:297:17:void linkage_task(const void*)	128	static
+C:/Users/27767/Desktop/cboard/applications/linkage_task.cpp:559:1:void __static_initialization_and_destruction_0()	8	static
+C:/Users/27767/Desktop/cboard/applications/linkage_task.cpp:559:1:cpp)	8	static

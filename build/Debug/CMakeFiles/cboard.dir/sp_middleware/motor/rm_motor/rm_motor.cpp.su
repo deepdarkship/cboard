@@ -1,0 +1,11 @@
+C:/Users/27767/Desktop/cboard/sp_middleware/motor/rm_motor/rm_motor.cpp:21:10:uint16_t sp::get_rx_id(uint8_t, RM_Motors)	16	static
+C:/Users/27767/Desktop/cboard/sp_middleware/motor/rm_motor/rm_motor.cpp:32:10:uint16_t sp::get_tx_id(uint8_t, RM_Motors)	16	static
+C:/Users/27767/Desktop/cboard/sp_middleware/motor/rm_motor/rm_motor.cpp:44:7:float sp::get_raw_to_torque(RM_Motors)	16	static
+C:/Users/27767/Desktop/cboard/sp_middleware/motor/rm_motor/rm_motor.cpp:56:7:float sp::get_cmd_to_raw(RM_Motors)	16	static
+C:/Users/27767/Desktop/cboard/sp_middleware/motor/rm_motor/rm_motor.cpp:70:9:int16_t sp::get_max_raw(RM_Motors)	16	static
+C:/Users/27767/Desktop/cboard/sp_middleware/motor/rm_motor/rm_motor.cpp:84:1:sp::RM_Motor::RM_Motor(uint8_t, sp::RM_Motors, float, bool)	24	static
+C:/Users/27767/Desktop/cboard/sp_middleware/motor/rm_motor/rm_motor.cpp:101:6:bool sp::RM_Motor::is_open() const	16	static
+C:/Users/27767/Desktop/cboard/sp_middleware/motor/rm_motor/rm_motor.cpp:103:6:bool sp::RM_Motor::is_alive(uint32_t) const	16	static
+C:/Users/27767/Desktop/cboard/sp_middleware/motor/rm_motor/rm_motor.cpp:108:6:void sp::RM_Motor::read(uint8_t*, uint32_t)	48	static
+C:/Users/27767/Desktop/cboard/sp_middleware/motor/rm_motor/rm_motor.cpp:140:6:void sp::RM_Motor::write(uint8_t*) const	16	static
+C:/Users/27767/Desktop/cboard/sp_middleware/motor/rm_motor/rm_motor.cpp:146:6:void sp::RM_Motor::cmd(float)	32	static

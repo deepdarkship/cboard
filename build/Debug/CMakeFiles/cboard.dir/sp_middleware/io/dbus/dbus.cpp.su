@@ -1,0 +1,8 @@
+C:\ST\STM32CubeCLT_1.22.0\GNU-tools-for-STM32\bin\../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/include/c++/14.3.1/bits/std_abs.h:75:3:constexpr float std::abs(float)	16	static
+C:/Users/27767/Desktop/cboard/sp_middleware/io/dbus/dbus.cpp:7:14:float sp::get_stick(uint16_t)	16	static
+C:/Users/27767/Desktop/cboard/sp_middleware/io/dbus/dbus.cpp:9:23:sp::DBusSwitchMode sp::get_switch(uint8_t)	16	static
+C:/Users/27767/Desktop/cboard/sp_middleware/io/dbus/dbus.cpp:19:1:sp::DBus::DBus(UART_HandleTypeDef*, bool)	24	static
+C:/Users/27767/Desktop/cboard/sp_middleware/io/dbus/dbus.cpp:24:6:void sp::DBus::request()	16	static
+C:/Users/27767/Desktop/cboard/sp_middleware/io/dbus/dbus.cpp:39:6:void sp::DBus::update(uint16_t, uint32_t)	80	static
+C:/Users/27767/Desktop/cboard/sp_middleware/io/dbus/dbus.cpp:112:6:bool sp::DBus::is_open() const	16	static
+C:/Users/27767/Desktop/cboard/sp_middleware/io/dbus/dbus.cpp:114:6:bool sp::DBus::is_alive(uint32_t) const	16	static

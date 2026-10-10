@@ -1,0 +1,4 @@
+C:/Users/27767/Desktop/cboard/sp_middleware/io/buzzer/buzzer.cpp:5:1:sp::Buzzer::Buzzer(TIM_HandleTypeDef*, uint16_t, float)	24	static
+C:/Users/27767/Desktop/cboard/sp_middleware/io/buzzer/buzzer.cpp:10:6:void sp::Buzzer::start()	16	static
+C:/Users/27767/Desktop/cboard/sp_middleware/io/buzzer/buzzer.cpp:15:6:void sp::Buzzer::stop()	16	static
+C:/Users/27767/Desktop/cboard/sp_middleware/io/buzzer/buzzer.cpp:20:6:void sp::Buzzer::set(float, float)	32	static

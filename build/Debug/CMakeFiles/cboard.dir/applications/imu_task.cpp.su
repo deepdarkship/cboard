@@ -1,0 +1,4 @@
+C:/Users/27767/Desktop/cboard/applications/imu_task.cpp:38:10:ImuState get_imu_state()	24	static
+C:/Users/27767/Desktop/cboard/applications/imu_task.cpp:49:17:void imu_task(const void*)	32	static
+C:/Users/27767/Desktop/cboard/applications/imu_task.cpp:85:1:void __static_initialization_and_destruction_0()	24	static
+C:/Users/27767/Desktop/cboard/applications/imu_task.cpp:85:1:cpp)	8	static

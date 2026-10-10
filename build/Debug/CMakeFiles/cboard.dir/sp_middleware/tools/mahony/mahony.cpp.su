@@ -1,0 +1,15 @@
+C:\ST\STM32CubeCLT_1.22.0\GNU-tools-for-STM32\bin\../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/include/c++/14.3.1/cmath:112:3:constexpr float std::asin(float)	16	static
+C:\ST\STM32CubeCLT_1.22.0\GNU-tools-for-STM32\bin\../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/include/c++/14.3.1/cmath:150:3:constexpr float std::atan2(float, float)	16	static
+C:\ST\STM32CubeCLT_1.22.0\GNU-tools-for-STM32\bin\../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/include/c++/14.3.1/cmath:181:3:constexpr float std::cos(float)	16	static
+C:\ST\STM32CubeCLT_1.22.0\GNU-tools-for-STM32\bin\../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/include/c++/14.3.1/cmath:404:3:constexpr float std::sin(float)	16	static
+C:\ST\STM32CubeCLT_1.22.0\GNU-tools-for-STM32\bin\../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/include/c++/14.3.1/cmath:442:3:constexpr float std::sqrt(float)	16	static
+C:\ST\STM32CubeCLT_1.22.0\GNU-tools-for-STM32\bin\../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/include/c++/14.3.1/cmath:461:3:constexpr float std::tan(float)	16	static
+C:/Users/27767/Desktop/cboard/sp_middleware/tools/mahony/mahony.cpp:8:1:sp::Mahony::Mahony(float, float, float)	24	static
+C:/Users/27767/Desktop/cboard/sp_middleware/tools/mahony/mahony.cpp:19:6:void sp::Mahony::update(const float*, const float*)	24	static
+C:/Users/27767/Desktop/cboard/sp_middleware/tools/mahony/mahony.cpp:24:6:void sp::Mahony::update(float, float, float, float, float, float)	96	static
+C:/Users/27767/Desktop/cboard/sp_middleware/tools/mahony/mahony.cpp:119:6:void sp::Mahony::culculate_yaw_pitch_roll_rates(float, float, float, float, float, float)	48	static
+C:/Users/27767/Desktop/cboard/sp_middleware/tools/mahony/mahony.cpp:127:6:void sp::Mahony::init(float, float, float)	80	static
+C:/Users/27767/Desktop/cboard/sp_middleware/tools/mahony/mahony.cpp:162:6:void sp::Mahony::pitch_geom_calc()	32	static
+C:/Users/27767/Desktop/cboard/sp_middleware/tools/mahony/mahony.cpp:191:6:void sp::Mahony::set_kp(float)	16	static
+C:/Users/27767/Desktop/cboard/sp_middleware/tools/mahony/mahony.cpp:193:6:void sp::Mahony::set_ki(float)	16	static
+C:/Users/27767/Desktop/cboard/sp_middleware/tools/mahony/mahony.cpp:202:6:void sp::Mahony::quaternion_frame_transform_for_mahony(const float*, const float*, float*, bool)	64	static
