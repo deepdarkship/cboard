@@ -58,6 +58,7 @@
 extern DMA_HandleTypeDef hdma_usart3_rx;
 extern UART_HandleTypeDef huart3;
 extern TIM_HandleTypeDef htim14;
+extern CAN_HandleTypeDef hcan1;
 
 /* USER CODE BEGIN EV */
 
@@ -200,11 +201,16 @@ void TIM8_TRG_COM_TIM14_IRQHandler(void)
   HAL_TIM_IRQHandler(&htim14);
   /* USER CODE BEGIN TIM8_TRG_COM_TIM14_IRQn 1 */
 
+
+  /* USER CODE END TIM8_TRG_COM_TIM14_IRQn 1 */
+}
+
 /**
   * @brief This function handles CAN1 RX0 interrupt.
   */
-
-  /* USER CODE END TIM8_TRG_COM_TIM14_IRQn 1 */
+void CAN1_RX0_IRQHandler(void)
+{
+  HAL_CAN_IRQHandler(&hcan1);
 }
 
 /* USER CODE BEGIN 1 */

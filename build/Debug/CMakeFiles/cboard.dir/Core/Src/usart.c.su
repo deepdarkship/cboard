@@ -1,4 +1,0 @@
-C:/Users/27767/Desktop/cboard/Core/Src/usart.c:33:6:MX_USART1_UART_Init	8	static
-C:/Users/27767/Desktop/cboard/Core/Src/usart.c:62:6:MX_USART3_UART_Init	8	static
-C:/Users/27767/Desktop/cboard/Core/Src/usart.c:90:6:HAL_UART_MspInit	56	static
-C:/Users/27767/Desktop/cboard/Core/Src/usart.c:174:6:HAL_UART_MspDeInit	16	static

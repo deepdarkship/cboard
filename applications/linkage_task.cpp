@@ -5,9 +5,9 @@
 
 #include "FreeRTOS.h"
 #include "cmsis_os.h"
-#include "io/can/can.hpp"
+#include "can_task.hpp"
 #include "io/plotter/plotter.hpp"
-#include "motor/rm_motor/rm_motor.hpp"
+
 #include "task.h"
 #include "tools/pid/pid.hpp"
 
@@ -15,12 +15,8 @@ namespace
 {
   // ========================= 必须按实车修改的参数 =========================
   // 电机 CAN ID。若 A/B 使用同一控制帧，本程序会自动合成一帧发送。
-  constexpr uint8_t kMotorAId = 4U;
-  constexpr uint8_t kMotorBId = 2U;
 
   // 电机编码器到输出轴的真实机械减速比。GM6020 直驱时通常为 1.0f。
-  constexpr float kMotorARatio = 1.0f;
-  constexpr float kMotorBRatio = 1.0f;
 
   // 机械正方向系数。若给正扭矩时电机实际转向与期望相反，将对应值改为 -1.0f。
   constexpr float kMotorADir = 1.0f;
@@ -64,9 +60,6 @@ namespace
   // A 电机与 C 板 yaw 保持 1:1 联动
   constexpr float kLinkA = kMotorADir * 1.0f;
 
-  sp::CAN can1(&hcan1);
-  sp::RM_Motor motor_a(kMotorAId, sp::RM_Motors::GM6020, kMotorARatio, true);
-  sp::RM_Motor motor_b(kMotorBId, sp::RM_Motors::GM6020, kMotorBRatio, true);
 
   sp::PID pid_a(
       kControlDt, kPositionKp, 0.0f, kPositionKd, kTorqueLimitNm, 0.0f, 1.0f, false, false);
@@ -180,28 +173,6 @@ namespace
     reset_settle_active = false;
   }
 
-  void send_motor_commands()
-  {
-    uint8_t tx_data[8] = {};
-
-    if (motor_a.tx_id == motor_b.tx_id)
-    {
-      motor_a.write(tx_data);
-      motor_b.write(tx_data);
-      std::memcpy(can1.tx_data, tx_data, sizeof(tx_data));
-      can1.send(motor_a.tx_id);
-      return;
-    }
-
-    std::memset(can1.tx_data, 0, sizeof(can1.tx_data));
-    motor_a.write(can1.tx_data);
-    can1.send(motor_a.tx_id);
-
-    std::memset(can1.tx_data, 0, sizeof(can1.tx_data));
-    motor_b.write(can1.tx_data);
-    can1.send(motor_b.tx_id);
-  }
-
   void control_motor_a(float target, float target_speed, uint32_t now_ms)
   {
     if (!motor_a.is_alive(now_ms))
@@ -271,37 +242,10 @@ extern "C"
   volatile float g_motor_b_torque_cmd = 0.0f;
 }
 
-// CAN1 RX0 中断入口。本项目 CubeMX 未生成该中断服务函数，
-// 按中间件 io/can/readme.md 的中断接收方式在此补上。
-extern "C" void CAN1_RX0_IRQHandler(void) { HAL_CAN_IRQHandler(&hcan1); }
-
-// 电机反馈帧的解析放在 CAN 接收中断回调中，与中间件示例保持一致。
-extern "C" void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef * hcan)
-{
-  if (hcan != &hcan1) return;
-
-  const uint32_t stamp_ms = osKernelSysTick();
-
-  while (HAL_CAN_GetRxFifoFillLevel(hcan, CAN_RX_FIFO0) > 0U) {
-    can1.recv();
-
-    if (can1.rx_id == motor_a.rx_id) {
-      motor_a.read(can1.rx_data, stamp_ms);
-    }
-    else if (can1.rx_id == motor_b.rx_id) {
-      motor_b.read(can1.rx_data, stamp_ms);
-    }
-  }
-}
-
 extern "C" void linkage_task(void const *argument)
 {
-  (void)argument;
 
-  can1.config();
-  can1.start();
-  HAL_NVIC_SetPriority(CAN1_RX0_IRQn, 5U, 0U);
-  HAL_NVIC_EnableIRQ(CAN1_RX0_IRQn);
+  can_task_init();
 
   g_cfg_motor_a_id = kMotorAId;
   g_cfg_motor_b_id = kMotorBId;

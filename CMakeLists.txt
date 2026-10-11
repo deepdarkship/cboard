@@ -50,6 +50,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     applications/imu_task.cpp
     applications/plotter_task.cpp
     applications/uart_task.cpp
+    applications/can_task.cpp
     applications/linkage_task.cpp
     sp_middleware/io/led/led.cpp
     sp_middleware/io/buzzer/buzzer.cpp

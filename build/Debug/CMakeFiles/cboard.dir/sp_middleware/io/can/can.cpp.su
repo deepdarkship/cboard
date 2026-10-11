@@ -1,7 +1,0 @@
-C:/Users/27767/Desktop/cboard/sp_middleware/io/can/can.cpp:5:1:sp::CAN::CAN(CAN_HandleTypeDef*)	16	static
-C:/Users/27767/Desktop/cboard/sp_middleware/io/can/can.cpp:7:6:void sp::CAN::config()	56	static
-C:/Users/27767/Desktop/cboard/sp_middleware/io/can/can.cpp:24:6:void sp::CAN::config(const CAN_FilterTypeDef&)	16	static
-C:/Users/27767/Desktop/cboard/sp_middleware/io/can/can.cpp:29:6:void sp::CAN::start()	16	static
-C:/Users/27767/Desktop/cboard/sp_middleware/io/can/can.cpp:36:6:void sp::CAN::recv(uint32_t)	16	static
-C:/Users/27767/Desktop/cboard/sp_middleware/io/can/can.cpp:54:6:void sp::CAN::send(uint32_t)	16	static
-C:/Users/27767/Desktop/cboard/sp_middleware/io/can/can.cpp:69:6:void sp::CAN::send_ext(uint8_t, uint16_t, uint8_t, uint8_t)	16	static
